@@ -2,7 +2,7 @@
 """
                        Gabe Hoenstine
                          10-5-26
-This is the calculations and anaylis done on LAB 1 CALABRATIONS
+This is the calculations and analysis done on LAB 1 CALABRATIONS
                   The Plots are qouted out
       Values to be found in Variable Explorer as well
 """
