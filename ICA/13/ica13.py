@@ -111,9 +111,9 @@ convolvebs = blank_sky * g2dbs
 
 sky_count = np.median(convolvebs)
 
-######################
 
-net =    sum_count -  n *  sky_count
+
+net = sum_count -  n *  sky_count
 
 m = -2.5 * np.log10(net/30)
 
@@ -121,11 +121,13 @@ m = -2.5 * np.log10(net/30)
 
 
 #plt.imshow(image, cmap='gray')
-#plt.imshow(ztf_cutout, cmap='gray')
-plt.title('Postition of Star')
+
+#plt.imshow(ztf_cutout, cmap='gray', origin='lower', extent=[300-50,300+50, 300-50,300+50])
+#plt.imshow(ztf_cutout, cmap='gray', origin='lower', extent=[500-20,500+20, 300-20,300+20])
+plt.title('2D Gaussian Overlay of Blank Sky')
 plt.xlabel('Pixels')
 plt.ylabel('Pixels')
-#plt.contour(xvals,yvals,g2d)
+#plt.contour(xvals, yvals, g2d)
 #plt.plot(x, y, 'rx') #Part 3
 
 
